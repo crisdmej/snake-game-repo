@@ -1,0 +1,21 @@
+2021-12-06T16:58:30.396568200255-16:58:30 **** Incremental Build of configuration Debug for project final_project ****
+000-make all 
+000-'Building file: ../src/main_video_test.cpp'
+000-'Invoking: MicroBlaze g++ compiler'
+000-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_video_test.o" -IE:/ECE4305L/vitis_workspace/final_project/mcs_top_complete/export/mcs_top_complete/sw/mcs_top_complete/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_video_test.d" -MT"src/main_video_test.o" -o "src/main_video_test.o" "../src/main_video_test.cpp"
+000-'Finished building: ../src/main_video_test.cpp'
+000-' '
+000-'Building target: final_project.elf'
+000-'Invoking: MicroBlaze g++ linker'
+000-mb-g++ -Wl,-T -Wl,../src/lscript.ld -LE:/ECE4305L/vitis_workspace/final_project/mcs_top_complete/export/mcs_top_complete/sw/mcs_top_complete/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "final_project.elf"  ./src/adsr_core.o ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_video_test.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: final_project.elf'
+000-' '
+000-'Invoking: MicroBlaze Print Size'
+000-mb-size final_project.elf  |tee "final_project.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  28552	   1324	   3252	  33128	   8168	final_project.elf
+000-'Finished building: final_project.elf.size'
+000-' '
+00255-
+16:58:31 Build Finished (took 1s.327ms)
+
